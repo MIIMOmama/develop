@@ -36,6 +36,10 @@ header {
     margin-right: 120px;
     align-items: center;
     min-width: 151px;
+
+    @include m.pc {
+        margin-right: 20px;
+    }
 }
 
 .headerLogo_title {

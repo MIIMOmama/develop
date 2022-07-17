@@ -139,9 +139,13 @@
 }
 
 
+
 .aboutImgWrap {
-    width: 100%;
     margin-right: 137px;
+
+    @include m.pc {
+        margin-right: 0;
+    }
 }
 
 .about_img {
@@ -169,9 +173,9 @@
 
 .aboutContainer-reverse {
     flex-direction: row-reverse;
-    justify-content: right;
-    margin-right: 0;
 }
+
+
 
 .aboutWrap-reverse {
     padding: 20px 0 0 20px;

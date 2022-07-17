@@ -41,6 +41,11 @@ header {
   align-items: center;
   min-width: 151px;
 }
+@media screen and (max-width: 1080px) {
+  .headerLogoWrap {
+    margin-right: 20px;
+  }
+}
 
 .headerLogo_title {
   font-size: 2rem;
@@ -206,8 +211,12 @@ header {
 }
 
 .aboutImgWrap {
-  width: 100%;
   margin-right: 137px;
+}
+@media screen and (max-width: 1080px) {
+  .aboutImgWrap {
+    margin-right: 0;
+  }
 }
 
 .about_img {
@@ -236,8 +245,6 @@ header {
 
 .aboutContainer-reverse {
   flex-direction: row-reverse;
-  justify-content: right;
-  margin-right: 0;
 }
 
 .aboutWrap-reverse {
@@ -485,8 +492,8 @@ header {
 }
 
 .globalNav_list {
-  position: absolute;
   display: flex;
+  align-items: center;
   color: #fff;
 }
 @media screen and (max-width: 1080px) {
@@ -720,7 +727,7 @@ header {
 
 .globalButton {
   box-sizing: border-box;
-  min-width: 157px;
+  min-width: 103px;
   background-color: #978F10;
   color: #ffffff;
   font-weight: bold;
@@ -729,6 +736,8 @@ header {
 @media screen and (max-width: 1080px) {
   .globalButton {
     margin-right: 50%;
+    text-align: center;
+    padding: 10px;
   }
 }
 
