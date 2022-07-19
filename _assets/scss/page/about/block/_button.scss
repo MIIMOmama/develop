@@ -1,10 +1,30 @@
+@use '../../../mixin' as m;
+
+
+
 
 .globalButton {
+    box-sizing: border-box;
+    min-width: 104px;
     background-color: #978F10;
     color: #ffffff;
     font-weight: bold;
     padding: 19px 37px;
+
+    @include m.pc {
+        margin-right: 50%;
+        text-align: center;
+        padding: 10px;
+    }
 }
+.globalButton_body {
+    padding-left: 10px;
+
+
+}
+
+
+
 .globalButton_body {
     padding-left: 10px;
 }

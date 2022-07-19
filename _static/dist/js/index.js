@@ -150,7 +150,7 @@ jsHamburger.addEventListener('click', function() {
     if(this.getAttribute('aria-expanded') == 'false') {
         this.setAttribute('aria-expanded', 'true');
         spHeaderMenu.style.visibility = "visible";
-        spHeadetMenu.setAttribute('aria-hidden', 'false')
+        spHeaderMenu.setAttribute('aria-hidden', 'false')
     } else {
         this.setAttribute('aria-expanded', 'false')
         spHeaderMenu.style.visibility = "hidden";
