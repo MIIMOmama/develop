@@ -22,7 +22,7 @@
 
 .hamburger {
     position: fixed;
-    top: 16px;
+    top: 18px;
     right: 20px;
     z-index: 3;
     width: 48px;
@@ -125,6 +125,12 @@
         margin: 50% 40%;
         font-size: 2rem;
         color: #fff;
+    }
+
+    @include m.tab {
+        position: relative;
+        top: 50%;
+        left: -5%;
     }
 }
 .globalNav_list-scroll {

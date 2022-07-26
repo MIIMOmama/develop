@@ -147,8 +147,8 @@ header {
   font-size: 1.75rem;
   writing-mode: vertical-rl;
   margin-left: 118px;
-  line-height: 1.8;
-  letter-spacing: 0.5rem;
+  line-height: 2;
+  letter-spacing: 0.8rem;
 }
 @media screen and (max-width: 1080px) {
   .concept_title {
@@ -159,7 +159,8 @@ header {
 
 .concept_title-high {
   display: block;
-  margin-top: -60px;
+  margin-top: -82px;
+  letter-spacing: 0.8rem;
 }
 @media screen and (max-width: 1080px) {
   .concept_title-high {
@@ -171,7 +172,7 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   margin-left: 118px;
-  line-height: 1.8;
+  line-height: 2.5;
   letter-spacing: 0.5rem;
 }
 @media screen and (max-width: 1080px) {
@@ -183,6 +184,7 @@ header {
 }
 
 .concept_text-end {
+  font-size: 1.375rem;
   writing-mode: vertical-rl;
   text-align: right;
   letter-spacing: 0.5rem;
@@ -302,11 +304,19 @@ header {
   margin: 0 auto;
 }
 
+.notionSecTittle {
+  margin-bottom: 46px;
+}
+
 .accessSec {
   background-image: url(../img/bg/textbg.png);
   box-sizing: border-box;
   width: 100%;
   padding: 60px 20px 110px 20px;
+}
+
+.accessSecTittle {
+  margin-bottom: 84px;
 }
 
 .accessWrap {
@@ -328,7 +338,7 @@ header {
 
 .accessTextWrap {
   max-width: 600px;
-  line-height: 2;
+  line-height: 2.5;
   margin-left: 83px;
 }
 @media screen and (max-width: 1080px) {
@@ -369,7 +379,7 @@ header {
 
 .telWrap {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
 }
@@ -500,11 +510,24 @@ header {
   .globalNav_list {
     margin: 50% 40%;
     font-size: 2rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .globalNav_list {
+    position: relative;
+    top: 50%;
+    left: -5%;
   }
 }
 
 .globalNav_list-scroll {
   color: #000;
+}
+@media screen and (max-width: 1080px) {
+  .globalNav_list-scroll {
+    color: #fff;
+  }
 }
 
 .globalNav_item {
@@ -641,12 +664,25 @@ header {
   margin: 20% auto;
   padding-bottom: 90px;
 }
+@media screen and (max-width: 1080px) {
+  .modal_content {
+    width: 370px;
+  }
+}
 
 .modalWrap {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-left: 40%;
+}
+
+input {
+  width: 100%;
+}
+
+#modalButton-close {
+  width: 20.3px;
 }
 
 .reserve_title {
@@ -658,6 +694,7 @@ header {
   border: none;
   font-size: 3rem;
   margin-right: 20px;
+  color: #707070;
 }
 
 .reserveWrap {
@@ -665,6 +702,13 @@ header {
   margin: 29px auto 30px;
   padding: 35px 0;
   border-top: 1px solid #E7E7E7;
+}
+@media screen and (max-width: 1080px) {
+  .reserveWrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 20px;
+  }
 }
 
 .reserve_detail {
@@ -678,6 +722,12 @@ header {
   margin-bottom: 14px;
   border: 1px solid #E7E7E7;
   padding: 9px 0 9px 10px;
+}
+@media screen and (max-width: 1080px) {
+  .reserve_body {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .textBox, .select {
@@ -735,9 +785,14 @@ header {
 }
 @media screen and (max-width: 1080px) {
   .globalButton {
-    margin-right: 50%;
+    margin-right: 10%;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .globalButton {
+    margin-right: 20%;
   }
 }
 

@@ -77,8 +77,8 @@
     font-size: 1.75rem;
     writing-mode: vertical-rl;
     margin-left: 118px;
-    line-height: 1.8;
-    letter-spacing: 0.5rem;
+    line-height: 2;
+    letter-spacing: 0.8rem;
 
     @include m.pc {
         writing-mode: initial;
@@ -87,7 +87,9 @@
 }
 .concept_title-high {
     display: block;
-    margin-top: -60px;
+    margin-top: -82px;
+    letter-spacing: 0.8rem;
+
 
     @include m.pc {
         margin-left: -20px;
@@ -97,7 +99,7 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin-left: 118px;
-    line-height: 1.8;
+    line-height: 2.5;
     letter-spacing: 0.5rem;
 
     @include m.pc {
@@ -108,6 +110,7 @@
     }
 }
 .concept_text-end {
+    font-size: 1.375rem;
     writing-mode: vertical-rl;
     text-align: right;
     letter-spacing: 0.5rem;
@@ -236,7 +239,9 @@
 }
 
 
-
+.notionSecTittle {
+    margin-bottom: 46px;
+}
 
 
 
@@ -246,6 +251,10 @@
     box-sizing: border-box;
     width: 100%;
     padding: 60px 20px 110px 20px;
+}
+
+.accessSecTittle {
+    margin-bottom: 84px;
 }
 
 .accessWrap {
@@ -266,7 +275,7 @@
 
 .accessTextWrap {
     max-width: 600px;
-    line-height: 2;
+    line-height: 2.5;
     margin-left: 83px;
 
     @include m.pc {
@@ -316,7 +325,7 @@
 
 .telWrap {
     margin: 0 auto;
-    width: 320px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
 }

@@ -128,10 +128,21 @@
     @include m.pc {
         margin: 50% 40%;
         font-size: 2rem;
+        color: #fff;
+    }
+
+    @include m.tab {
+        position: relative;
+        top: 50%;
+        left: -5%;
     }
 }
 .globalNav_list-scroll {
     color: #000;
+
+    @include m.pc {
+        color: #fff;
+    }
 }
 
 .globalNav_item {

@@ -5,6 +5,8 @@ header {
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
+  margin-top: -20px;
+  padding-top: 10px;
 }
 
 .headerInner {
@@ -73,12 +75,26 @@ header {
   margin: 20% auto;
   padding-bottom: 90px;
 }
+@media screen and (max-width: 1080px) {
+  .modal_content {
+    width: 370px;
+  }
+}
 
 .modalWrap {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-left: 40%;
+}
+
+input {
+  width: 100%;
+}
+
+#modalButton-close {
+  width: 20.3px;
+  color: #707070;
 }
 
 .reserve_title {
@@ -98,6 +114,13 @@ header {
   padding: 35px 0;
   border-top: 1px solid #E7E7E7;
 }
+@media screen and (max-width: 1080px) {
+  .reserveWrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 20px;
+  }
+}
 
 .reserve_detail {
   display: block;
@@ -110,6 +133,12 @@ header {
   margin-bottom: 14px;
   border: 1px solid #E7E7E7;
   padding: 9px 0 9px 10px;
+}
+@media screen and (max-width: 1080px) {
+  .reserve_body {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .textBox, .select {
@@ -176,7 +205,7 @@ header {
 
 .hamburger {
   position: fixed;
-  top: 16px;
+  top: 18px;
   right: 20px;
   z-index: 3;
   width: 48px;
@@ -279,6 +308,13 @@ header {
     color: #fff;
   }
 }
+@media screen and (max-width: 768px) {
+  .globalNav_list {
+    position: relative;
+    top: 50%;
+    left: -5%;
+  }
+}
 
 .globalNav_list-scroll {
   color: #000;
@@ -314,9 +350,14 @@ header {
 }
 @media screen and (max-width: 1080px) {
   .globalButton {
-    margin-right: 50%;
+    margin-right: 10%;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .globalButton {
+    margin-right: 20%;
   }
 }
 
@@ -338,7 +379,7 @@ header {
 }
 
 body {
-  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 @media screen and (max-width: 1080px) {
@@ -373,7 +414,7 @@ footer {
 .mainViewContainer {
   position: relative;
   bottom: -80px;
-  margin-bottom: 80px;
+  margin: -20px 0 80px 0;
 }
 
 .mainViewWrap {
@@ -392,6 +433,7 @@ footer {
   right: 47%;
   color: #fff;
   font-size: 2.125rem;
+  font-weight: bold;
 }
 @media screen and (max-width: 1080px) {
   .mainView_title {
@@ -404,9 +446,14 @@ footer {
   margin: 0 auto;
   padding: 36px 20px;
 }
+@media screen and (max-width: 1080px) {
+  .detailSecInner {
+    padding: 36px 10px;
+  }
+}
 
 .messageWrap {
-  margin: 150px auto 78px;
+  margin: 97px auto 78px;
 }
 
 .message_text {
@@ -422,6 +469,7 @@ footer {
 @media screen and (max-width: 1150px) {
   .detailContainer {
     display: block;
+    margin-bottom: 100px;
   }
 }
 
@@ -435,6 +483,7 @@ footer {
   .detailContainer-reverse {
     display: block;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
 }
 
@@ -498,7 +547,7 @@ footer {
   .detail_text {
     margin: 0;
     text-align: center;
-    padding-bottom: 10%;
+    padding: 0 1% 10% 1%;
   }
 }
 
@@ -555,8 +604,77 @@ footer {
 
 .telWrap {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
+}
+
+.effectSecInner {
+  box-sizing: border-box;
+  max-width: 1180px;
+  margin: 156px auto 96px;
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 95px 150px 74px 150px;
+}
+@media screen and (max-width: 1080px) {
+  .effectSecInner {
+    padding: 95px 50px 74px 50px;
+    margin: 0 auto 0;
+  }
+}
+
+.effectTittle {
+  font-size: 1.625rem;
+  text-align: center;
+  margin-bottom: 51px;
+}
+
+.effectDetailTittle {
+  font-weight: normal;
+  width: 80px;
+  float: left;
+  padding: 17px 160px 0 0;
+  border-top: 1px solid #E7E7E7;
+}
+@media screen and (max-width: 1080px) {
+  .effectDetailTittle {
+    padding: 17px 30px 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .effectDetailTittle {
+    float: initial;
+    border: none;
+  }
+}
+
+.effectDetailText {
+  margin-left: 240px;
+  padding: 17px 0;
+  border-top: 1px solid #E7E7E7;
+}
+@media screen and (max-width: 1080px) {
+  .effectDetailText {
+    margin-left: 110px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .effectDetailText {
+    margin-left: 0;
+    border-bottom: 1px solid #E7E7E7;
+  }
+}
+
+.effectList {
+  font-size: 0.9375rem;
+  max-width: 880px;
+  border-bottom: 1px solid #E7E7E7;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1080px) {
+  .effectList {
+    border: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

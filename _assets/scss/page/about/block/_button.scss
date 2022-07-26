@@ -12,9 +12,13 @@
     padding: 19px 37px;
 
     @include m.pc {
-        margin-right: 50%;
+        margin-right: 10%;
         text-align: center;
-        padding: 10px;
+        padding: 5px 0 10px 0;
+    }
+
+    @include m.tab {
+        margin-right: 20%;
     }
 }
 .globalButton_body {

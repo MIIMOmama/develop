@@ -10,7 +10,7 @@
 .mainViewContainer {
     position: relative;
     bottom: -80px;
-    margin-bottom: 80px;
+    margin: -20px 0 80px 0;
 }
 .mainViewWrap {
     max-width: 100%;
@@ -27,6 +27,7 @@
     right: 47%;
     color: #fff;
     font-size: 2.125rem;
+    font-weight: bold;
 
     @include m.pc {
         right: 43%;
@@ -38,10 +39,14 @@
     max-width: 1180px;
     margin: 0 auto;
     padding: 36px 20px;
+
+    @include m.pc {
+        padding: 36px 10px;
+    }
 }
 
 .messageWrap {
-    margin: 150px auto 78px;
+    margin: 97px auto 78px;
 }
 .message_text {
     text-align: center;
@@ -57,6 +62,7 @@
 
     @include m.page {
         display: block;
+        margin-bottom: 100px;
     }
 
 }
@@ -71,6 +77,7 @@
     @include m.page {
         display: block;
         flex-wrap: wrap;
+        margin-bottom: 100px;
     }
 }
 
@@ -130,7 +137,8 @@
     @include m.page {
         margin: 0;
         text-align: center;
-        padding-bottom: 10%;
+        padding: 0 1% 10% 1%;
+
     }
 }
 
@@ -186,7 +194,73 @@
 
 .telWrap {
     margin: 0 auto;
-    width: 320px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
+}
+
+
+
+.effectSecInner {
+    box-sizing: border-box;
+    max-width: 1180px;
+    margin: 156px auto 96px;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 95px 150px 74px 150px;
+
+    @include m.pc {
+        padding: 95px 50px 74px 50px;
+        margin: 0 auto 0;
+    }
+}
+
+.effectTittle {
+    font-size: 1.625rem;
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.effectDetailTittle {
+    font-weight: normal;
+    width: 80px;
+    float: left;
+    padding: 17px 160px 0 0;
+    border-top: 1px solid #E7E7E7;
+
+    @include m.pc {
+        padding: 17px 30px 10px 0;
+    }
+
+    @include m.tab {
+        float: initial;
+        border: none;
+    }
+}
+
+.effectDetailText {
+    margin-left: 240px;
+    padding: 17px 0;
+    border-top: 1px solid #E7E7E7;
+
+    @include m.pc {
+        margin-left: 110px;
+    }
+
+    @include m.tab {
+        margin-left: 0;
+        border-bottom: 1px solid #E7E7E7;
+    }
+
+}
+
+.effectList {
+    font-size: 0.9375rem;
+    max-width: 880px;
+    border-bottom:  1px solid #E7E7E7;
+    margin: 0 auto;
+
+    @include m.pc {
+        border: none;
+    }
 }
